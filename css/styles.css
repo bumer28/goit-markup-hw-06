@@ -725,4 +725,34 @@ overflow: hidden;
   cursor: pointer;
 }
 
+.contact-form.label {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.modal-text {
+  display: flex;
+  font-weight: 700;
+  margin: 40px 40px 12px 40px;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--titl-text-color);
+  
+}
+.name {
+  
+  font-size: 12px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+  margin-bottom: 4px;
+}
+.form-input {
+  width: 448px;
+  height: 40px;
+}
 
