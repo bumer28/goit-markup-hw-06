@@ -723,8 +723,15 @@ overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   cursor: pointer;
+  
 }
-
+.hero-icon {
+  fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-modal-btn:hover .hero-icon {
+  fill: var(--accent-color);
+}
 .contact-form.label {
   
  /* display: flex;
@@ -745,10 +752,13 @@ overflow: hidden;
 } 
 
 .label {
+  position: relative;
   display: block;
+  cursor: pointer;
   margin-bottom: 10px;
 
 }
+
 .name {
   display: block;
   font-size: 12px;
@@ -759,30 +769,51 @@ overflow: hidden;
 }
 .form-textarea,
 .form-input {
+  
   width: 100%;
-  height: 40px;
+  margin: 0;
+  padding: 10px 42px;
+  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  box-sizing: border-box;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+.form-icon {
+  position: absolute;
+  bottom: 13px;
+  left: 14px;
+  fill: var(--titl-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.form-input:focus + .form-icon {
+  
+  fill: var(--accent-color);
 }
 .form-policy-grup {
   display: block;
 }
 .sumbit-btn {
-    border: transparent;
+  border: transparent;
     
     
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.87;
-      align-items: center;
-      text-align: center;
-      letter-spacing: 0.06em;
-      color: var(--hero-text-color);
-      cursor: pointer;
-      background-color: var(--background-btn);
-      padding: 10px 55px;
-      border-radius: 4px;
-      display: block;
-      margin: auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--hero-text-color);
+  cursor: pointer;
+  background-color: var(--background-btn);
+  padding: 10px 55px;
+  border-radius: 4px;
+  display: block;
+  margin: auto;
 }
 
