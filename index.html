@@ -442,20 +442,22 @@
             <use href="./images/sprite.svg#icon-mail"></use>
           </svg>
         </label>
-        <label class="label">
+        <label class="textarea-label">
           <span class="name">Коментарий</span>
-          <textarea class="form-textarea" type="comment" name="comment" placeholder="Введите текст"></textarea>
+          <textarea class="form-textarea" type="comment" name="comment" rows="7" placeholder="Введите текст"></textarea>
         </label>
 
         <label class="form-policy-group">
-          <input class="checkbox" type="checkbox" />
+          <input class="checkbox visually-hidden" type="checkbox" name="agreement" />
+
           <span class="custom-checkbox">
-            <svg class="ustom-checkbox-icon" width="20" height="20">
-              <use href=""></use>
+            <svg class="custom-checkbox-icon" width="13" height="13">
+              <use href="./images/sprite.svg#icon-galochka"></use>
             </svg>
           </span>
           <span class="form-policy-desc">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
           </span>
+
         </label>
         <button class="sumbit-btn" type="submit">Отправить</button>
       </form>
